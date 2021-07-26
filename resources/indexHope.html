@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+  <meta charset=“utf-8">
+  <meta name=“viewport” content=“width=device-width, initial-scale=1, shrink-to-fit=no”>
+  <!--bootstrap css link-->
+  <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css” integrity=“sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z” crossorigin=“anonymous”>
+  <!--css link-->
+  <link rel=“stylesheet” type=“text/css” href=“resources/css/styleHope.css”>
+  <link rel=“preconnect” href=“https://fonts.googleapis.com”>
+  <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
+  <link href=“https://fonts.googleapis.com/css2?family=Quicksand&display=swap” rel=“stylesheet”>
+  <title>Task 1-3</title>
+</head>
+<body>
+  <div class=“container”>
+    <div class=“row mb-5”>
+        <div class=“col”>
+            <h2>Task Form</h2>
+            <form id=“taskform”>
+                <div class=“form-group”>
+                    <label for=“taskname”>Name</label>
+                    <input type=“text” class=“form-control” id=“taskname”>
+                </div>
+                <div class=“form-group”>
+                    <label for=“taskdescription”>Description</label>
+                    <textarea type=“text” class=“form-control” id=“taskdescription”></textarea>
+                </div>
+                <div class=“form-row”>
+                    <div class=“form-group col”>
+                        <label for=“assignee”>Assigned To</label>
+                        <input type=“text” class=“form-control” id=“assignee”>
+                    </div>
+                    <div class=“form-group col”>
+                        <label for=“status”>Status</label>
+                        <input type=“text” class=“form-control” id=“status”>
+                    </div>
+                    <div class=“form-group col”>
+                        <label for=“dueDate”>Due Date</label>
+                        <input type=“date” class=“form-control” id=“dueDate”>
+                    </div>
+                </div>
+                <button type=“submit” class=“btn btn-secondary float-sm-right”>Add Task</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class=“row”>
+  <div class=“col”>
+    <h2 class=“text-center”>Task Cards</h2>
+  </div>
+</div>
+<div class=“col-8 mx-auto”>
+  <div class=“card-deck”>
+    <div class=“card bg-light”>
+      <div class=“card-body”>
+      <h4>Task 1</h4>
+        <p class=“card-text”>Create Task Wireframe</p>
+        <p class=“card-text”>Axelle Moreau</p>
+        <p class=“card-text”>06/29/21</p>
+        <span class=“badge badge-success”>Completed</span>
+        <a href=“#” class=“btn btn-secondary”>Update</a>
+      </div>
+    </div>
+    <div class=“card bg-light”>
+      <div class=“card-body”>
+      <h4>Task 2</h4>
+        <p class=“card-text”>Created a GitHub Repo and HTML Structure of Wireframe Design</p>
+        <p class=“card-text”>Jeyanthi</p>
+        <p class=“card-text”>06/30/21</p>
+        <span class=“badge bg-success”>Completed</span>
+        <a href=“#” class=“btn btn-secondary”>Update</a>
+      </div>
+    </div>
+    <div class=“card bg-light”>
+      <div class=“card-body”>
+      <h4>Task 3</h4>
+        <p class=“card-text”>Implemented the HTML Structure with Bootstrap</p>
+        <p class=“card-text”>Hope</p>
+        <p class=“card-text”>06/30/21</p>
+        <span class=“badge bg-success”>Completed</span>
+        <a href=“#” class=“btn btn-secondary”>Update</a>
+      </div>
+    </div>
+    <div class=“card bg-light”>
+      <div class=“card-body”>
+      <h4>Task 4</h4>
+        <p class=“card-text”>Created a Task Card layout and a Task List component</p>
+        <p class=“card-text”>Hope</p>
+        <p class=“card-text”>06/30/21</p>
+        <span class=“badge bg-success”>Completed</span>
+        <a href=“#” class=“btn btn-secondary”>Update</a>
+      </div>
+    </div>
+    <div class=“card bg-light”>
+      <div class=“card-body”>
+      <h4>Task 5</h4>
+        <p class=“card-text”>Added Teacher as Collaborator in GitHUb</p>
+        <p class=“card-text”>Jeyanthi</p>
+        <p class=“card-text”>07/01/21</p>
+        <span class=“badge bg-success”>Completed</span>
+        <a href=“#” class=“btn btn-secondary”>Update</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
