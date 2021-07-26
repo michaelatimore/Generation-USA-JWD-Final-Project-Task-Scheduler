@@ -38,10 +38,10 @@ function defaultEvents(dataDay,dataName,dataNotes,classTag){
   date.addClass("event--" + classTag);
 }
 
-defaultEvents(today, 'YEAH!','Today is your day','important');
-defaultEvents('2017-12-25', 'MERRY CHRISTMAS','A lot of gift!!!!','festivity');
-defaultEvents('2017-05-04', "LUCA'S BIRTHDAY",'Another gifts...?','birthday');
-defaultEvents('2017-03-03', "MY LADY'S BIRTHDAY",'A lot of money to spent!!!!','birthday');
+// ---defaultEvents(today, 'YEAH!','Today is your day','important');
+//defaultEvents('2017-12-25', 'MERRY CHRISTMAS','A lot of gift!!!!','festivity');
+//defaultEvents('2017-05-04', "LUCA'S BIRTHDAY",'Another gifts...?','birthday');
+//defaultEvents('2017-03-03', "MY LADY'S BIRTHDAY",'A lot of money to spent!!!!',//'birthday');
 
 
 // ------ functions control -------

@@ -9,13 +9,13 @@
     </head>
 
     <body>
-        <h1 id="header">Welcome to Calendar.js</h1>
+        <h1 id="header">Generation USA Task Scheduler</h1>
 
         <div class="contents">
             <p>Click <a href="calendarjs.min.html" target="_self">here</a> to jump to the minimized version.</p>
 
             <div id="myCalendar" style="max-width: 800px;">
-                <p>Some data that should be cleared.</p>
+                <p></p>
             </div>
             <br>
     
@@ -167,114 +167,254 @@
             previousYear.setFullYear( previousYear.getFullYear() - 1 );
             nextYear.setFullYear( nextYear.getFullYear() + 1 );
 
-            return [
-                {
-                    from: previousYear,
-                    to: previousYear,
-                    title: "Previous Year",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    group: "Group 2"
-                },
-                {
-                    from: nextYear,
-                    to: nextYear,
-                    title: "Next Year",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    group: "Group 2"
-                },
-                {
-                    from: previousDay,
-                    to: previousDay,
-                    title: "Previous Day",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    color: "#FF0000",
-                    colorText: "#FFFF00",
-                    colorBorder: "#00FF00",
-                    repeatEvery: 5,
-                    id: "1234-5678-9",
-                    group: "Group 1"
-                },
-                {
-                    from: today11,
-                    to: tomorrow,
-                    title: "Title 1",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: false,
-                    group: "group 1"
-                },
-                {
-                    from: tomorrow,
-                    to: today11,
-                    title: "Title Bad (should not show)",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: false,
-                    group: "group 1"
-                },
-                {
-                    from: today9,
-                    to: today9,
-                    title: "Title 2",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    group: "Group 1",
-                    url: "https://www.google.com/"
-                },
-                {
-                    from: firstDayInNextMonth,
-                    to: firstDayInNextMonth,
-                    title: "First Day 1",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    color: "#00FF00",
-                    colorText: "#FF0000",
-                    repeatEvery: 4,
-                    group: "Group 2"
-                },
-                {
-                    from: firstDayInNextMonth,
-                    to: firstDayInNextMonth,
-                    title: "First Day 2",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    color: "#00FF00",
-                    colorText: "#FF0000",
-                    repeatEvery: 4,
-                    group: "Group 2"
-                },
-                {
-                    from: lastDayInNextMonth,
-                    to: lastDayInNextMonth,
-                    title: "Last Day 1",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    location: "Teams Meeting",
-                    isAllDay: true,
-                    color: "#0000FF",
-                    repeatEvery: 2,
-                    group: "Group 2"
-                },
-                {
-                    from: today,
-                    to: today3HoursAhead,
-                    title: "Regular Event",
-                    description: "This is a another description of the event that has been added, so it can be shown in the pop-up dialog.",
-                    repeatEvery: 1,
-                    repeatEveryExcludeDays: [ 6, 0 ],
-                    repeatEnds: new Date( today.getFullYear() + 1, 0, 1 ),
-                    group: "Group 1"
-                }
-            ];
+        return [
+     {
+         from: previousYear,
+         to: previousYear,
+         title: "Previous Year",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         group: "Group 2"
+     },
+     {
+         from: nextYear,
+         to: nextYear,
+         title: "Next Year",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         group: "Group 2"
+     },
+     {
+         from: previousDay,
+         to: previousDay,
+         title: "Previous Day",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         color: "#FF0000",
+         colorText: "#FFFF00",
+         colorBorder: "#00FF00",
+         repeatEvery: 5,
+         id: "1234-5678-9",
+         group: "Group 1"
+     },
+     {
+         from: today11,
+         to: tomorrow,
+         title: "Title 1",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: false,
+         group: "group 1"
+     },
+     {
+         from: tomorrow,
+         to: today11,
+         title: "Title Bad (should not show)",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: false,
+         group: "group 1"
+     },
+     {
+         from: today9,
+         to: today9,
+         title: "Title 2",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         group: "Group 1",
+         url: "https://www.google.com/"
+     },
+     {
+         from: firstDayInNextMonth,
+         to: firstDayInNextMonth,
+         title: "First Day 1",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         color: "#00FF00",
+         colorText: "#FF0000",
+         repeatEvery: 4,
+         group: "Group 2"
+     },
+     {
+         from: firstDayInNextMonth,
+         to: firstDayInNextMonth,
+         title: "First Day 2",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         color: "#00FF00",
+         colorText: "#FF0000",
+         repeatEvery: 4,
+         group: "Group 2"
+     },
+     {
+         from: lastDayInNextMonth,
+         to: lastDayInNextMonth,
+         title: "Last Day 1",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         location: "Teams Meeting",
+         isAllDay: true,
+         color: "#0000FF",
+         repeatEvery: 2,
+         group: "Group 2"
+     },
+     {
+         from: today,
+         to: today3HoursAhead,
+         title: "Regular Event",
+         description: "This is a another description of the event that 
+has been added, so it can be shown in the pop-up dialog.",
+         repeatEvery: 1,
+         repeatEveryExcludeDays: [ 6, 0 ],
+         repeatEnds: new Date( today.getFullYear() + 1, 0, 1 ),
+         group: "Group 1"
+     }
+     ];
+     }
+     function addNewHoliday() {
+            var today = new Date();
+
+            var holiday1 = {
+                day: today.getDate(),
+                month: today.getMonth() + 1,
+                title: "A New Holiday",
+            };
+
+            var holiday2 = {
+                day: today.getDate(),
+                month: today.getMonth() + 1,
+                title: "Another Holiday",
+            };
+            
+            calendarInstance.addHolidays( [ holiday1, holiday2 
         }
+    </script>
+</html>
+ 
+ 
+
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        
 
         function addNewHoliday() {
             var today = new Date();
